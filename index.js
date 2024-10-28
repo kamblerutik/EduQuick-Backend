@@ -7,7 +7,7 @@ const PORT = 5000;
 
 app.use(cors());
 app.use(express.json());
-app.use("/api", router);
+app.use("/", router);
 
 ConnetDB().then(() => {
   app.listen(PORT, () => {
